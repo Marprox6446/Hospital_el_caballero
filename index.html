@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="icono_pestaña.ico">
+    <title>Hospital el Caballero</title>
+</head>
+<body>
+
+  <div class="top-right-buttons">
+    <a href="login.html" class="floating-button">
+      <img src="usu.png" alt="USUARIO" style="width: 35px; height: 35px;">
+    </a>    
+    <a href="car.html" class="floating-button">
+      <img src="car.png" alt="CARRITO" style="width: 30px; height: 30px;">
+    </a>    
+  </div>
+
+    <nav class="menu">
+        <div class="toggle-menu">
+          <span class="arrow">▶</span> Menú
+        </div>
+        <ul class="menu-items">
+          <li><a href="#">Inicio</a></li>
+          <li class="has-submenu">
+            <a href="serv.html">Servicios Médicos</a>
+            <ul class="submenu">
+              <li><a href="espec.html">Especialidades</a></li>
+              <li><a href="proc.html">Procedimientos</a></li>
+              <li><a href="prev.html">Programas de Prevención</a></li>
+            </ul>
+          </li>
+          <li><a href="info.html">Información para Pacientes</a></li>
+          <li><a href="nyv.html">Noticias y Eventos</a></li>
+          <li><a href="cono.html">Conócenos</a></li>
+          <li><a href="catalogo.html">Catalogo</a></li>
+        </ul>
+      </nav>
+
+      <section class="gallery">
+        <h2>Galería de Imágenes</h2>
+        <div class="gallery-images">
+          <img src="1.jpeg" alt="Imagen 1">
+          <img src="2.jpg" alt="Imagen 2">
+          <img src="3.jpeg" alt="Imagen 3">
+          <img src="4.jpg" alt="Imagen 4">
+          <img src="5.jpg" alt="Imagen 5">
+          <img src="6.jpg" alt="Imagen 6">
+          <img src="7.jpg" alt="Imagen 7">
+          <img src="8.jpeg" alt="Imagen 8">
+          <img src="9.jpg" alt="Imagen 9">
+          <img src="10.jpg" alt="Imagen 10">
+          <!-- Agrega más imágenes aquí -->
+        </div>
+      </section>
+      
+
+      <section class="testimonials">
+        <h2>Testimonios de Pacientes</h2>
+        <div class="testimonial">
+          <p>"Mi experiencia en este hospital fue excepcional. Desde el momento en que entré por la puerta, me sentí bienvenido y cuidado. El personal médico fue muy profesional y atento a mis necesidades. Recibí un tratamiento de primera clase y me fui completamente satisfecho. ¡Recomendaría este hospital a cualquiera que busque atención médica de calidad!"</p>
+        </div>
+        <div class="testimonial">
+          <p>"Estoy muy agradecido por el cuidado que recibí en este hospital. El equipo médico mostró una compasión y empatía excepcionales durante todo mi tratamiento. Me sentí seguro y en buenas manos en todo momento. Gracias a su experiencia y dedicación, mi recuperación fue rápida y sin complicaciones. ¡No puedo agradecerles lo suficiente por todo lo que han hecho por mí!"</p>
+        </div>
+        <div class="testimonial">
+          <p>"Después de buscar en varios hospitales, decidí venir a este y no me arrepiento en absoluto. El personal médico aquí es simplemente increíble. No solo son expertos en lo que hacen, sino que también se preocupan genuinamente por el bienestar de sus pacientes. Me sentí escuchado y comprendido en todo momento. Recibí un tratamiento personalizado que superó mis expectativas. ¡Gracias por brindarme una atención tan excepcional!"</p>
+        </div>
+        <div class="testimonial">
+          <p>"Mi experiencia en este hospital fue extraordinaria. El equipo médico no solo fue profesional y competente, sino que también mostró un nivel excepcional de compasión y apoyo. Me sentí muy bien atendido durante todo mi tiempo aquí. Incluso en los momentos difíciles, siempre estuvieron allí para brindarme tranquilidad y aliento. ¡No podría haber pedido un mejor cuidado!"</p>
+        </div>
+        <div class="testimonial">
+          <p>"Este hospital realmente se preocupa por sus pacientes. Desde el primer día, me sentí como si estuviera en buenas manos. El personal médico fue muy amable y servicial, respondiendo a todas mis preguntas y preocupaciones con paciencia. Recibí un tratamiento integral que abordó todas mis necesidades de salud. ¡Estoy muy agradecido por la atención excepcional que recibí aquí!"</p>
+        </div>
+        <div class="testimonial-container">
+          <!-- Los testimonios se agregarán aquí dinámicamente con JavaScript -->
+        </div>
+      </section>
+      
+      <section class="blog">
+        <h2>Blog de Salud</h2>
+        <div class="blog-posts">
+          <div class="blog-post">
+            <h3>Los beneficios de una dieta equilibrada</h3>
+            <p>Una dieta equilibrada es esencial para mantener una buena salud. Descubre los beneficios de consumir una variedad de alimentos...</p>
+            <a href="#">Leer más</a>
+          </div>
+          <div class="blog-post">
+            <h3>Estrategias para manejar el estrés</h3>
+            <p>El estrés puede tener un impacto significativo en nuestra salud mental y física. Aprende algunas estrategias efectivas para manejar el estrés en tu vida diaria...</p>
+            <a href="#">Leer más</a>
+          </div>
+          <div class="blog-post">
+            <h3>Consejos para un sueño saludable</h3>
+            <p>El sueño es crucial para nuestra salud y bienestar. Descubre algunos consejos para mejorar la calidad de tu sueño y sentirte más descansado...</p>
+            <a href="#">Leer más</a>
+          </div>
+          <!-- Agrega más publicaciones de blog aquí -->
+        </div>
+      </section>
+      
+      <section class="contact-form">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Nombre" required>
+          <input type="email" id="email" placeholder="Correo Electrónico" required>
+          <textarea id="message" placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      
+      <script src="index.js"></script>
+
+</body>
+</html>

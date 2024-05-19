@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programas de Prevención</title>
+  <link rel="stylesheet" href="prev.css">
+</head>
+<body>
+  <section class="hero-prevention">
+    <div class="hero-content">
+      <h1>Programas de Prevención</h1>
+      <p>Descubre nuestros programas diseñados para promover la salud y prevenir enfermedades.</p>
+    </div>
+  </section>
+
+  <section class="prevention-programs">
+    <h2>Nuestros Programas</h2>
+    <div class="program-cards">
+      <div class="program-card">
+        <h3>Programa de Vacunación</h3>
+        <p>Proporcionamos vacunas esenciales para proteger a la comunidad contra enfermedades.</p>
+      </div>
+      <div class="program-card">
+        <h3>Control de Diabetes</h3>
+        <p>Ofrecemos recursos y apoyo para manejar y prevenir la diabetes.</p>
+      </div>
+      <div class="program-card">
+        <h3>Salud Mental</h3>
+        <p>Servicios de apoyo y terapia para mantener la salud mental.</p>
+      </div>
+      <div class="program-card">
+        <h3>Detección de Cáncer</h3>
+        <p>Pruebas y evaluaciones para la detección temprana del cáncer.</p>
+      </div>
+      <div class="program-card">
+        <h3>Nutrición y Ejercicio</h3>
+        <p>Programas para fomentar hábitos saludables de alimentación y actividad física.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="details-prevention">
+    <h2>Detalles de los Programas</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button">Programa de Vacunación</button>
+        <div class="accordion-content">
+          <p>Nuestro programa de vacunación ofrece una variedad de vacunas para prevenir enfermedades comunes y proteger la salud pública.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Control de Diabetes</button>
+        <div class="accordion-content">
+          <p>Proporcionamos educación, recursos y apoyo continuo para ayudar a los pacientes a manejar su diabetes de manera efectiva.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Salud Mental</button>
+        <div class="accordion-content">
+          <p>Nuestro programa de salud mental ofrece terapia individual y grupal, así como recursos para el manejo del estrés y la ansiedad.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Detección de Cáncer</button>
+        <div class="accordion-content">
+          <p>Realizamos pruebas de detección temprana para varios tipos de cáncer, aumentando las posibilidades de un tratamiento exitoso.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Nutrición y Ejercicio</button>
+        <div class="accordion-content">
+          <p>Ofrecemos programas de nutrición y ejercicio para ayudar a las personas a desarrollar y mantener hábitos de vida saludables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #4CAF50;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+
+  <!-- Botón de regreso al inicio -->
+  <button class="back-to-top" onclick="redirectToIndex()">↑</button>
+
+  <script>
+    // Función para redirigir al usuario a index.html
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hospital. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="prev.js"></script>
+</body>
+</html>

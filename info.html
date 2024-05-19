@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información para Pacientes</title>
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Información para Pacientes</h1>
+      <p>Encuentra toda la información necesaria para tu visita al hospital.</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#registro-medico">Registro Médico</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#preparacion">Preparación para Procedimientos</a></li>
+      <li><a href="#recursos">Recursos Educativos</a></li>
+    </ul>
+  </nav>
+
+  <section id="registro-medico" class="info-section">
+    <h2>Registro Médico</h2>
+    <div class="info-content">
+      <p>Para acceder a tu registro médico, sigue los siguientes pasos:</p>
+      <ol>
+        <li>Inicia sesión en el portal del paciente.</li>
+        <li>Ve a la sección de "Historial Médico".</li>
+        <li>Descarga o imprime tu historial según sea necesario.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="citas" class="info-section">
+    <h2>Citas</h2>
+    <div class="info-content">
+      <p>Agenda tus citas de manera fácil y rápida:</p>
+      <ul>
+        <li>Inicia sesión en el portal del paciente.</li>
+        <li>Selecciona "Agendar Cita".</li>
+        <li>Elige la especialidad y el doctor.</li>
+        <li>Selecciona la fecha y hora disponible.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="preparacion" class="info-section">
+    <h2>Preparación para Procedimientos</h2>
+    <div class="info-content">
+      <p>Conoce los pasos a seguir para prepararte adecuadamente:</p>
+      <div class="preparation-steps">
+        <div class="step">
+          <h3>Antes del Procedimiento</h3>
+          <p>Sigue las instrucciones específicas proporcionadas por tu médico, que pueden incluir ayuno, medicación, y más.</p>
+        </div>
+        <div class="step">
+          <h3>El Día del Procedimiento</h3>
+          <p>Llega al hospital con tiempo, lleva tus documentos y sigue todas las instrucciones del personal médico.</p>
+        </div>
+        <div class="step">
+          <h3>Después del Procedimiento</h3>
+          <p>Descansa y sigue las indicaciones de recuperación proporcionadas por tu médico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recursos" class="info-section">
+    <h2>Recursos Educativos</h2>
+    <div class="info-content">
+      <p>Accede a una variedad de recursos educativos para mejorar tu salud:</p>
+      <ul>
+        <li><a href="#">Guías de Salud</a></li>
+        <li><a href="#">Videos Educativos</a></li>
+        <li><a href="#">Webinars y Talleres</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+
+  <!-- Botón de regreso al inicio -->
+  <button class="back-to-top" onclick="redirectToIndex()">↑</button>
+
+  <script>
+    // Función para redirigir al usuario a index.html
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hospital. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="info.js"></script>
+</body>
+</html>

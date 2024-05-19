@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Ventas</title>
+  <link rel="stylesheet" href="catalogo.css">
+  <script src="catalogo.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Catálogo de Ventas</h1>
+      <p>Compra artículos y medicinas de forma fácil y segura.</p>
+      <a href="car.html">Ir al Carrito</a>
+    </div>
+  </header>
+
+  <!-- Sección de productos disponibles -->
+  <section id="catalogo" class="info-section">
+    <h2>Productos Disponibles</h2>
+    <!-- Tarjetas de productos -->
+    <div class="product-cards">
+      <!-- Producto 1 -->
+      <div class="product-card">
+        <img src="medicina1.jpg" alt="Medicina 1">
+        <h3>Medicina A</h3>
+        <p>Descripción breve de la medicina A.</p>
+        <p class="price">$10.00</p>
+        <button class="add-to-cart" data-product="Medicina A" data-price="10.00">Agregar al Carrito</button>
+      </div>
+      <!-- Producto 2 -->
+      <div class="product-card">
+        <img src="medicina2.jpg" alt="Medicina 2">
+        <h3>Medicina B</h3>
+        <p>Descripción breve de la medicina B.</p>
+        <p class="price">$15.00</p>
+        <button class="add-to-cart" data-product="Medicina B" data-price="15.00">Agregar al Carrito</button>
+      </div>
+      <!-- Producto 3 -->
+      <div class="product-card">
+        <img src="articulo1.jpg" alt="Artículo 1">
+        <h3>Artículo X</h3>
+        <p>Descripción breve del artículo X.</p>
+        <p class="price">$20.00</p>
+        <button class="add-to-cart" data-product="Artículo X" data-price="20.00">Agregar al Carrito</button>
+      </div>
+      <!-- Producto 4 -->
+      <div class="product-card">
+        <img src="articulo2.jpg" alt="Artículo 2">
+        <h3>Artículo Y</h3>
+        <p>Descripción breve del artículo Y.</p>
+        <p class="price">$25.00</p>
+        <button class="add-to-cart" data-product="Artículo Y" data-price="25.00">Agregar al Carrito</button>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+
+  <!-- Botón de regreso al inicio -->
+  <button class="back-to-top" onclick="redirectToIndex()">↑</button>
+
+  <script>
+    // Función para redirigir al usuario a index.html
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hospital. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+

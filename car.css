@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header, footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .info-section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s;
+  }
+  
+  .info-section h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-content {
+    text-align: center;
+  }
+  
+  #cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    background-color: #f0f8ff;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+  }
+  
+  #total-price {
+    font-weight: bold;
+  }
+  
+  #checkout-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #checkout-button:hover {
+    background-color: #218838;
+  }
+  
+  .footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

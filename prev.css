@@ -1,0 +1,122 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .hero-prevention {
+    background-color: #4CAF50;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 2s;
+  }
+  
+  .hero-prevention h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .hero-prevention p {
+    font-size: 1.2em;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .prevention-programs {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .prevention-programs h2 {
+    margin-bottom: 20px;
+    color: #2E7D32;
+  }
+  
+  .program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .program-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: popIn 1s;
+  }
+  
+  .program-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes popIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  .details-prevention {
+    padding: 40px 20px;
+  }
+  
+  .details-prevention h2 {
+    margin-bottom: 20px;
+    color: #2E7D32;
+  }
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button:hover {
+    background-color: #388E3C;
+  }
+  
+  .accordion-content {
+    background-color: white;
+    padding: 10px;
+    display: none;
+    border-left: 3px solid #4CAF50;
+    animation: slideDown 0.5s;
+  }
+  
+  @keyframes slideDown {
+    from { max-height: 0; opacity: 0; }
+    to { max-height: 1000px; opacity: 1; }
+  }
+  
+  .footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  

@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .hero {
+    background-color: #0056b3;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 2s;
+  }
+  
+  .hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .services {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 1s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .details {
+    padding: 40px 20px;
+  }
+  
+  .details h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .accordion-content {
+    background-color: white;
+    padding: 10px;
+    display: none;
+    border-left: 3px solid #007BFF;
+    animation: fadeInContent 0.5s;
+  }
+  
+  @keyframes fadeInContent {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  

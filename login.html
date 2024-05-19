@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="text" id="email" placeholder="Correo electrónico" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+  <!-- Script adicional para manejar el envío del formulario de inicio de sesión -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Evitar el envío del formulario por defecto
+
+      // Obtener los valores de correo y contraseña
+      var email = document.getElementById('email').value;
+      var contraseña = document.getElementById('password').value;
+
+      // Verificar las credenciales de inicio de sesión
+      if (email === 'admin@example.com' && contraseña === 'contraseñaadmin') {
+        // Redirigir al panel de administración si las credenciales son correctas
+        window.location.href = 'admin.html';
+      } else {
+        // Verificar credenciales de usuario normal...
+      }
+    });
+  </script>
+
+  <!-- Script para redirigir al usuario al hacer clic en el botón de regreso -->
+  <script>
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
+

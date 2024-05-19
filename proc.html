@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procedimientos Médicos</title>
+  <link rel="stylesheet" href="proc.css">
+</head>
+<body>
+  <section class="hero-procedures">
+    <div class="hero-content">
+      <h1>Procedimientos Médicos</h1>
+      <p>Conoce los procedimientos médicos que ofrecemos y cómo pueden ayudarte.</p>
+    </div>
+  </section>
+
+  <section class="procedures">
+    <h2>Nuestros Procedimientos</h2>
+    <div class="procedure-cards">
+      <div class="procedure-card">
+        <h3>Angioplastia</h3>
+        <p>Procedimiento para abrir arterias estrechas o bloqueadas.</p>
+      </div>
+      <div class="procedure-card">
+        <h3>Colonoscopía</h3>
+        <p>Examen para detectar cambios o anormalidades en el colon y el recto.</p>
+      </div>
+      <div class="procedure-card">
+        <h3>Biopsia</h3>
+        <p>Extracción de una pequeña muestra de tejido para su examen.</p>
+      </div>
+      <div class="procedure-card">
+        <h3>Resonancia Magnética</h3>
+        <p>Imágenes detalladas del interior del cuerpo usando campos magnéticos.</p>
+      </div>
+      <div class="procedure-card">
+        <h3>Cirugía Laparoscópica</h3>
+        <p>Técnica quirúrgica mínimamente invasiva.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="details-procedures">
+    <h2>Detalles de los Procedimientos</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button">Angioplastia</button>
+        <div class="accordion-content">
+          <p>La angioplastia es un procedimiento que utiliza un pequeño globo para abrir arterias estrechas o bloqueadas, mejorando el flujo sanguíneo al corazón.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Colonoscopía</button>
+        <div class="accordion-content">
+          <p>La colonoscopía es un examen que permite a los médicos ver el interior del colon y el recto para detectar cambios o anormalidades.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Biopsia</button>
+        <div class="accordion-content">
+          <p>Una biopsia implica la extracción de una pequeña muestra de tejido para su examen bajo un microscopio, ayudando en el diagnóstico de enfermedades.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Resonancia Magnética</button>
+        <div class="accordion-content">
+          <p>La resonancia magnética utiliza campos magnéticos y ondas de radio para crear imágenes detalladas del interior del cuerpo.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Cirugía Laparoscópica</button>
+        <div class="accordion-content">
+          <p>La cirugía laparoscópica es una técnica quirúrgica mínimamente invasiva que utiliza pequeñas incisiones y una cámara para realizar procedimientos dentro del abdomen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+
+  <!-- Botón de regreso al inicio -->
+  <button class="back-to-top" onclick="redirectToIndex()">↑</button>
+
+  <script>
+    // Función para redirigir al usuario a index.html
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hospital. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="proc.js"></script>
+</body>
+</html>

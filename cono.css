@@ -1,0 +1,154 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #007BFF;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInDown 1s;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .info-section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s;
+  }
+  
+  .info-section h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .info-section p {
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    animation: popIn 1s;
+  }
+  
+  .team-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h3 {
+    margin-top: 0;
+    color: #007BFF;
+  }
+  
+  .team-card p {
+    margin: 0;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: popIn 1s;
+  }
+  
+  .gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .programs-content {
+    text-align: center;
+  }
+  
+  .programs-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .programs-content ul li {
+    background-color: #f0f8ff;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .programs-content ul li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes popIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="car.css">
+  <script src="car.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Carrito de Compras</h1>
+      <p>Revisa y finaliza tus compras.</p>
+      <a href="index.html">Seguir Comprando</a>
+    </div>
+  </header>
+
+  <!-- Sección del carrito de compras -->
+  <section id="carrito" class="info-section">
+    <h2>Carrito de Compras</h2>
+    <!-- Contenido del carrito -->
+    <div class="cart-content">
+      <ul id="cart-items">
+        <!-- Aquí van los elementos del carrito -->
+      </ul>
+      <p>Total: $<span id="total-price">0.00</span></p>
+      <button id="checkout-button">Proceder al Pago</button>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+
+  <!-- Botón de regreso al inicio -->
+  <button class="back-to-top" onclick="redirectToIndex()">↑</button>
+
+  <script>
+    // Función para redirigir al usuario a index.html
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hospital. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias y Eventos</title>
+  <link rel="stylesheet" href="nyv.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Noticias y Eventos</h1>
+      <p>Mantente informado sobre las últimas noticias y próximos eventos del hospital.</p>
+    </div>
+  </header>
+
+  <section id="noticias" class="info-section">
+    <h2>Noticias Recientes</h2>
+    <div class="news-cards">
+      <div class="news-card">
+        <h3>Inauguración de la nueva ala de pediatría</h3>
+        <p>El hospital ha inaugurado una nueva ala de pediatría con modernas instalaciones para el cuidado infantil.</p>
+        <a href="#">Leer más</a>
+      </div>
+      <div class="news-card">
+        <h3>Campaña de donación de sangre</h3>
+        <p>Únete a nuestra campaña de donación de sangre el próximo fin de semana y salva vidas.</p>
+        <a href="#">Leer más</a>
+      </div>
+      <div class="news-card">
+        <h3>Nuevo equipo de resonancia magnética</h3>
+        <p>El hospital ha adquirido un nuevo equipo de resonancia magnética de última generación.</p>
+        <a href="#">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="eventos" class="info-section">
+    <h2>Próximos Eventos</h2>
+    <div class="events-calendar">
+      <div class="event">
+        <h3>Conferencia de Salud Mental</h3>
+        <p><strong>Fecha:</strong> 25 de mayo, 2024</p>
+        <p><strong>Lugar:</strong> Auditorio Principal</p>
+        <p>Únete a nuestra conferencia sobre salud mental con expertos en el campo.</p>
+      </div>
+      <div class="event">
+        <h3>Taller de Nutrición</h3>
+        <p><strong>Fecha:</strong> 10 de junio, 2024</p>
+        <p><strong>Lugar:</strong> Sala de Conferencias</p>
+        <p>Participa en nuestro taller de nutrición y aprende sobre hábitos alimenticios saludables.</p>
+      </div>
+      <div class="event">
+        <h3>Feria de Salud</h3>
+        <p><strong>Fecha:</strong> 20 de julio, 2024</p>
+        <p><strong>Lugar:</strong> Patio Central</p>
+        <p>Ven a nuestra feria de salud y disfruta de actividades, charlas y revisiones médicas gratuitas.</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+
+  <!-- Botón de regreso al inicio -->
+  <button class="back-to-top" onclick="redirectToIndex()">↑</button>
+
+  <script>
+    // Función para redirigir al usuario a index.html
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hospital. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="nyv.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #007BFF; /* Azul médico */
+    padding: 10px;
+    color: #fff;
+    z-index: 9999;
+    transition: width 0.3s ease;
+    width: 200px; /* Ancho del menú */
+  }
+  
+  .menu .toggle-menu {
+    cursor: pointer;
+  }
+  
+  .menu .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-items {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-items.open {
+    display: block;
+    animation: fadeInDown 0.5s ease; /* Animación de despliegue */
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .menu-items li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-items li.has-submenu.active .submenu {
+    display: block;
+  }
+  
+  .menu-items li.has-submenu.active .arrow {
+    transform: rotate(90deg);
+  }
+  
+  .submenu {
+    padding-left: 10px;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .submenu li {
+    margin-bottom: 5px;
+  }
+  
+  .submenu a {
+    color: #333; /* Color de texto */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .submenu a:hover {
+    color: #fff; /* Cambio de color al pasar el ratón */
+  }
+  
+
+  .gallery {
+    padding: 20px;
+  }
+  
+  .gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-images img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .testimonials {
+    padding: 20px;
+  }
+  
+  .testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+
+  .blog {
+    padding: 20px;
+  }
+  
+  .blog h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .blog-post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    /* Estilos del formulario */
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .gallery {
+    padding: 20px;
+  }
+  
+  .gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-images img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .zoomIn {
+    animation: zoomInAnimation 1s forwards;
+  }
+  
+  @keyframes zoomInAnimation {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  .testimonials {
+    padding: 20px;
+  }
+  
+  .testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  .rotate {
+    animation: rotateAnimation 0.5s forwards;
+  }
+  
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .blog {
+    padding: 20px;
+  }
+  
+  .blog h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .blog-post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    /* Estilos del formulario */
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .top-right-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .floating-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .floating-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .floating-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .content {
+    height: 2000px; /* Simulación de contenido largo para probar el desplazamiento */
+  }
+
+  .floating-button img {
+    width: 30px;
+    height: 30px;
+  }
+  

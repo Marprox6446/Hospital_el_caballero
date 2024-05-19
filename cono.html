@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conócenos</title>
+  <link rel="stylesheet" href="cono.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Conócenos</h1>
+      <p>Descubre más sobre nuestro hospital, equipo médico, instalaciones y programas comunitarios.</p>
+    </div>
+  </header>
+
+  <section id="about" class="info-section">
+    <h2>Sobre Nosotros</h2>
+    <div class="about-content">
+      <p>El Hospital se dedica a proporcionar atención médica de calidad, centrada en el paciente y comprometida con el bienestar de la comunidad. Nuestra misión es mejorar la salud y el bienestar de nuestros pacientes a través de servicios médicos de excelencia y programas innovadores.</p>
+    </div>
+  </section>
+
+  <section id="team" class="info-section">
+    <h2>Nuestro Equipo Médico</h2>
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="Dr. Juan Pérez.jpg" alt="Dr. Juan Pérez">
+        <h3>Dr. Juan Pérez</h3>
+        <p>Cardiólogo</p>
+      </div>
+      <div class="team-card">
+        <img src="Dra. Ana Gómez.jpg" alt="Dra. Ana Gómez">
+        <h3>Dra. Ana Gómez</h3>
+        <p>Pediatra</p>
+      </div>
+      <div class="team-card">
+        <img src="Dr. Carlos Ruiz.jpg" alt="Dr. Carlos Ruiz">
+        <h3>Dr. Carlos Ruiz</h3>
+        <p>Neurólogo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities" class="info-section">
+    <h2>Nuestras Instalaciones</h2>
+    <div class="gallery">
+      <img src="ins1.jpg" alt="Instalación 1">
+      <img src="ins2.jpg" alt="Instalación 2">
+      <img src="ins3.jpg" alt="Instalación 3">
+    </div>
+  </section>
+
+  <section id="programs" class="info-section">
+    <h2>Programas Comunitarios</h2>
+    <div class="programs-content">
+      <p>Nuestros programas comunitarios están diseñados para mejorar la salud y el bienestar de nuestra comunidad. Ofrecemos una variedad de programas, incluyendo:</p>
+      <ul>
+        <li>Clínicas de salud gratuitas</li>
+        <li>Charlas y talleres educativos</li>
+        <li>Campañas de prevención y bienestar</li>
+      </ul>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos específicos para el botón de regreso */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página -->
+
+  <!-- Botón de regreso al inicio -->
+  <button class="back-to-top" onclick="redirectToIndex()">↑</button>
+
+  <script>
+    // Función para redirigir al usuario a index.html
+    function redirectToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hospital. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="cono.js"></script>
+</body>
+</html>

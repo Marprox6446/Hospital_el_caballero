@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .hero-alt {
+    background-color: #0066cc;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    animation: slideDown 2s;
+  }
+  
+  .hero-alt h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .hero-alt p {
+    font-size: 1.2em;
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .specialties {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .specialties h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  .specialty-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .specialty-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s;
+  }
+  
+  .specialty-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .details-alt {
+    padding: 40px 20px;
+  }
+  
+  .details-alt h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .accordion-content {
+    background-color: white;
+    padding: 10px;
+    display: none;
+    border-left: 3px solid #007BFF;
+    animation: slideIn 0.5s;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
